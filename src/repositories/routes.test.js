@@ -6,7 +6,7 @@ describe('Backend routes method', () => {
         const testCases = [
             {
                 searchQuery: 'title search',
-                expected: {title: 'title search'}
+                expected: {rek_title: 'title search'}
             },
             {
                 searchQuery: '10.1163/9789004326828',
@@ -74,7 +74,7 @@ describe('Backend routes method', () => {
                     options: {
                         params: {
                             source: 'wos',
-                            title: 'title search'
+                            rek_title: 'title search'
                         }
                     }
                 }
@@ -165,7 +165,7 @@ describe('Backend routes method', () => {
                             page: 1,
                             per_page: 20,
                             sort: 'published_date',
-                            title: 'title search'
+                            rek_title: 'title search'
                         }
                     }
                 }
@@ -181,7 +181,7 @@ describe('Backend routes method', () => {
                             page: 2,
                             per_page: 30,
                             sort: 'score',
-                            title: 'title search',
+                            rek_title: 'title search',
                             ['filters[facets][one]']: 'one facet'
                         }
                     }

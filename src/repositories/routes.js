@@ -58,7 +58,7 @@ export const getSearchType = (searchQuery) => {
         return {id: `pmid:${searchQuery.trim()}`};
     }
 
-    return {title: searchQuery};
+    return {rek_title: searchQuery};
 };
 
 export const CURRENT_ACCOUNT_API = () => (
